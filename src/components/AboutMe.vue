@@ -5,7 +5,11 @@
       <img class="sprite" src="@/assets/campfire1.png">
   </div>
   <div class="dialog">
-      <p>Привет, меня зовут Дарья и я начинающий разработчик в поисках стажировки и работы в области веб-разработки</p>
+      <div class="dialog-inner">
+          <p>Привет, меня зовут Дарья и я начинающий
+            разработчик в поисках стажировки и работы в области веб-разработки</p>
+          <div class="triangle"></div>
+      </div>
   </div>
 </div>
 </template>
@@ -16,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .AboutMe {
         position: relative;
     }
@@ -43,10 +47,28 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 3;
-        max-width: 320px;
+        max-width: 340px;
         background-color: #1A1926;
         border: 2px solid #476669;
         border-radius: 6px;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .dialog-inner {
+        position: relative;
+        padding: 2px;
+    }
+    .triangle {
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 0;
+        height: 0;
+        border: 8px solid #476669;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
     }
 </style>

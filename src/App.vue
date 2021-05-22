@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Press+Start+2P&family=Russo+One&display=swap');
 #app {
   font-family: 'Oswald', sans-serif;
   text-align: center;
