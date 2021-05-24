@@ -4,18 +4,24 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <NavMenu />
     <AboutMe />
+    <Education />
+    <Portfolio />
   </div>
 </template>
 
 <script>
 import NavMenu from './components/NavMenu'
 import AboutMe from './components/AboutMe'
+import Education from './components/Education'
+import Portfolio from './components/Portfolio'
 
 export default {
   name: 'App',
   components: {
     NavMenu,
-    AboutMe
+    AboutMe,
+    Education,
+    Portfolio
   }
 }
 </script>
@@ -31,11 +37,24 @@ export default {
 
 body, ul {
   margin: 0;
+  min-width: 480px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0;
+  text-decoration: underline;
 }
 
 nav, h1 {
   font-family: 'Russo One', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-family: 'Russo One', sans-serif;
 }
 </style>
