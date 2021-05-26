@@ -4,8 +4,10 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <NavMenu />
     <AboutMe />
+    <Skills />
     <Education />
     <Portfolio />
+    <Contact />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import NavMenu from './components/NavMenu'
 import AboutMe from './components/AboutMe'
 import Education from './components/Education'
 import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 export default {
   name: 'App',
@@ -21,13 +25,15 @@ export default {
     NavMenu,
     AboutMe,
     Education,
-    Portfolio
+    Portfolio,
+    Contact,
+    Skills
   }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Press+Start+2P&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Press+Start+2P&family=Russo+One&display=swap');
 #app {
   font-family: 'Oswald', sans-serif;
   text-align: center;
@@ -35,7 +41,7 @@ export default {
   color: #E0E0E0;
 }
 
-body, ul {
+body {
   margin: 0;
   min-width: 480px;
   max-width: 1920px;

@@ -57,6 +57,14 @@ img {
   transform: translate(-50%, 0);
   left: 50%;
   z-index: 2;
+  animation: sprite-animation 1.3s linear infinite;
+}
+
+@keyframes sprite-animation {
+  0% {background-image: url("../assets/campfire1.png");}
+  20% {background-image: url("../assets/campfire2.png");}
+  40% {background-image: url("../assets/campfire3.png");}
+  60% {background-image: url("../assets/campfire4.png");}
 }
 
 .dialog {
